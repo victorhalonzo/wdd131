@@ -68,7 +68,7 @@ main {
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-gap: 6px;
-    margin: 20px;
+    margin: 1rem auto;
 
 }
 
@@ -107,6 +107,7 @@ h2 {
 
 .web-resources-links {
     align-items: center;
+    
 }
 
 footer {
