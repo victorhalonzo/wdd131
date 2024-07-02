@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portoviejo, Ecuador</title>
+    <meta name="description" content="The place where I live.">
+    <meta name="author" content="Victor Alonzo">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <script defer src="scripts/place.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Portoviejo</h1>
+    </header>
+    <main>
+        <div class="stripe"></div>
+        <div class="hero">
+            <picture>
+                <source srcset="images/Catedral-de-Portoviejo.webp" media="(min-width:800px)">
+                <img src="images/Portoviejo.webp" alt="Portoviejo City" width="500" height="250">
+            </picture>
+        </div>
+        <div class="stripe-2"></div>
+        <h2 class="title-data">Data</h2>
+        <div class="data">
+            <div class="labels">
+                <p><strong>Area: </strong></p>
+                <p><strong>Population: </strong></p>
+                <p><strong>Language: </strong></p>
+                <p><strong>Currency: </strong></p>
+                <p><strong>Time Zone: </strong></p>
+                <p><strong>Calling Code: </strong></p>
+                <p><strong>Internet TLD: </strong></p>
+            </div>
+            <div class="values">
+                <p>47,17 sq km</p>
+                <p>244,129</p>
+                <p>Spanish</p>
+                <p>American dollar</p>
+                <p>UTC-5</p>
+                <p>+593 5</p>
+                <p>.ec</p>
+            </div>
+        </div>
+        <h2 class="title-weather">Weather</h2>
+        <div class="img-weather">
+            <img class="img-weather" src="images/weather_icon.svg" alt="" width="100">
+        </div>
+        <div class="weather">
+            <div class="labels">
+                <p><strong>Temperature: </strong></p>
+                <p><strong>Conditions: </strong></p>
+                <p><strong>Wind: </strong></p>
+                <p><strong>Wind Chill: </strong></p>
+            
+            </div>
+            <div class="values">
+                <p><span id="temperature">25</span> °<span id="temperatureUnit">C</span></p>
+                <p>Warm semi-arid</p>
+                <p><span id="wind">12</span> km/h</p>
+                <p id="windChillFactor"></p>
+                
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p class="first-p-footer">&copy;<span id="currentyear"></span> 😎 Victor Alonzo 😎 Ecuador</p>
+        <p id="lastModified" class="second-p-footer"></p>
+    </footer>
+</body>
+
+</html>

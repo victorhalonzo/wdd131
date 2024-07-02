@@ -3,7 +3,7 @@
 
     header {
         display: grid;
-        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
         justify-items: center;
         background-color: var(--primary-color);
@@ -15,8 +15,9 @@
     }
 
     .navigation {
+        width: 100%;
         flex-direction: row;
-        justify-content: flex-end;
+        justify-content:space-around;
     }
 
     .navigation a {
