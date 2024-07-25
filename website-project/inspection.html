@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Inspection Service</title>
+    <meta name="description" content="A website where a vehicle's defects can be recorded at the time of
+    perform the review.">
+    <meta name="author" content="Victor Alonzo">
+    <link rel="stylesheet" href="styles/vehicles.css">
+    <link rel="stylesheet" href="styles/vehicles-large.css">
+    <script defer src="scripts/vehicles.js"></script>
+    <script defer src="scripts/inspection.js"></script>
+</head>
+
+<body>
+    <header>
+        <h1>Inspection</h1>
+        <button id="menu"></button>
+        <nav class="navigation">
+            <a href="index.html" id="allTemples">Home</a>
+            <a href="#" id="oldTemples">Inspection</a>
+            <a href="report.html" id="newTemples">Report</a>
+
+        </nav>
+    </header>
+    <main>
+        <form autocomplete="off">
+            <label for="code">Code</label>
+            <input type="text" name="code" id="code">
+            <label for="description">Defect description</label>
+            <input type="text" name="description" id="description">
+            <label for="qualification">Qualification</label>
+            <input type="number" name="qualification" id="qualification">
+
+            <button id="register">Register</button>
+        </form>
+
+        <div class="table-defects-vehicle">
+            <table id="detail-inspection">
+                <thead>
+                    <tr>
+                        <th>Code#</th>
+                        <th>Defect description</th>
+                        <th>Qual.</th>
+                        <th>Type</th>
+                    </tr>
+                </thead>
+                <tbody id="sections"></tbody>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <p class="first-p-footer">&copy;<span id="currentyear"></span> 😎 Victor Alonzo 😎 Ecuador</p>
+    </footer>
+</body>
+
+</html>

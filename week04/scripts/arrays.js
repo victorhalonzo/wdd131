@@ -4,7 +4,7 @@ const listTemplate = (step) => {
 }
 const stepsHtml =  steps.map(step => listTemplate(step)); // use map to convert the list from strings to HTML
 console.log(stepsHtml);
-document.querySelector("#myList").innerHTML = stepsHtml.join();
+//document.querySelector("#myList").innerHTML = stepsHtml.join();
 
 const grades= ['A','B','A'];
 function convertGrades(letter){
@@ -17,6 +17,7 @@ function convertGrades(letter){
 
 let gpaPoints= grades.map((grade)=> convertGrades(grade));
 console.log(gpaPoints);
+
 let average = gpaPoints.reduce((total, point) => total + point, 0) / gpaPoints.length;
 console.log(average);
 
@@ -33,6 +34,6 @@ let stuFirstName="Victor";
 console.log(`Welcome to the ${courseName} ${stuFirstName}!` );
 
 
-let esomeprazole = {'id':'mnb78932','amount':23145,'amountType':'ct','expDate':'10/01/2021'};
+/* let esomeprazole = {'id':'mnb78932','amount':23145,'amountType':'ct','expDate':'10/01/2021'};
 let dose=0;
-console.log(  esomeprazole['amount']);
+console.log(  esomeprazole['amount']); */

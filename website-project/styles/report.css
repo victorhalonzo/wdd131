@@ -1,0 +1,18 @@
+span{
+    font-weight: bold;
+}
+
+div{
+    text-align: center;
+}
+
+#result{
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#decision{
+    font-size: 30px;
+}
